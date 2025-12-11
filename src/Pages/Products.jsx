@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { Link, NavLink } from "react-router-dom";
 
 export default function Products() {
   const PER_PAGE = 20;
@@ -100,7 +101,8 @@ export default function Products() {
       {/* ✅ Products Grid */}
       <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 max-w-7xl mx-auto">
         {filteredProducts.map((item) => (
-          <div
+          <Link to={`/products/${item.id}`} className="nav-link">
+            <div
             key={item.id}
             className="bg-white rounded-xl shadow-md hover:shadow-xl transition"
           >
@@ -126,6 +128,7 @@ export default function Products() {
               </div>
             </div>
           </div>
+          </Link>
         ))}
       </div>
 
