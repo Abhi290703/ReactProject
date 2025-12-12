@@ -7,7 +7,7 @@ import { Login } from "../Features/Login";
 import { SignUp } from "../Features/Signup";
 import Users from "../User/Users";
 import DynamicRouting from "../dynamicRouting";
-// import Timer from "../Pages/Timer";
+
 
 
 
@@ -28,7 +28,6 @@ export default function AppRouter() {
       <Route path="/users" element={<Users/>} />
       {/* <Route path="/userdata" element={<UserData/>} /> */}
       <Route path="products/:id" element={<DynamicRouting/>} />
-      {/* <Route path="/timer" element={<Timer/>} /> */}
     </Routes>
     </>
   );
