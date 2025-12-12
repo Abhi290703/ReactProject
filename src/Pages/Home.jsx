@@ -7,6 +7,13 @@ export default function Home() {
       {/* Page Content */}
       <div className="w-full">
 
+        {/* Banner section */}
+
+        <section className='w-full'>
+          <img src="https://static.vecteezy.com/system/resources/thumbnails/004/299/835/small/online-shopping-on-phone-buy-sell-business-digital-web-banner-application-money-advertising-payment-ecommerce-illustration-search-free-vector.jpg" 
+          alt="Banner" className='w-full h-40 md:h-60 object-cover shadow-lg'/>
+        </section>
+
         {/* Hero Section */}
         <section className="bg-indigo-600 text-white py-20 px-6 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
