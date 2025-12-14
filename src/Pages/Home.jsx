@@ -3,14 +3,13 @@ import React from 'react'
 export default function Home() {
   return (
     <>
-
       {/* Page Content */}
       <div className="w-full">
 
         {/* Banner section */}
 
         <section className='w-full'>
-          <img src="https://static.vecteezy.com/system/resources/thumbnails/004/299/835/small/online-shopping-on-phone-buy-sell-business-digital-web-banner-application-money-advertising-payment-ecommerce-illustration-search-free-vector.jpg" 
+          <img src="https://t4.ftcdn.net/jpg/02/07/64/77/360_F_207647709_iapnIP9OVyWufZCc4f89fQVQJ5c2LLKu.jpg" 
           alt="Banner" className='w-full h-40 md:h-60 object-cover shadow-lg'/>
         </section>
 
