@@ -4,7 +4,7 @@ import { SignUp } from "../Features/Signup";
 
 export const UserForm = () => {
 
-  const [activeForm, setActiveForm] = useState("signup"); // default form
+  const [activeForm, setActiveForm] = useState("signup"); 
 
   return (
     <>
