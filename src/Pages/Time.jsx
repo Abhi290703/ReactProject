@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 
 export default function Time() {
-  const START_DAYS = 4;
+  const START_DAYS = 13;
   const INITIAL_TIME = START_DAYS * 24 * 60 * 60 * 1000;
 
   const [time, setTime] = useState(INITIAL_TIME);
@@ -25,12 +25,11 @@ export default function Time() {
   const hours = Math.floor((time % (24 * 60 * 60 * 1000)) / (60 * 60 * 1000));
   const minutes = Math.floor((time % (60 * 60 * 1000)) / (60 * 1000));
   const seconds = Math.floor((time % (60 * 1000)) / 1000);
-  const milliseconds = time % 1000;
 
   return (
     <div className="bg-white-200 text-black text-center py-2 text-sm font-semibold shadow-md">
        Offer ends in: {" "}
-      {days}d : {hours}h : {minutes}m : {seconds}s : {milliseconds}ms
+      {days}d : {hours}h : {minutes}m : {seconds}s 
     </div>
   );
 }
