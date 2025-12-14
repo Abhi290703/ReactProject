@@ -7,11 +7,7 @@ import { Login } from "../Features/Login";
 import { SignUp } from "../Features/Signup";
 import Users from "../User/Users";
 import DynamicRouting from "../dynamicRouting";
-
-
-
-
-// import UserData from "../User/UserData";
+import Toast from "../pages/Toast";
 
 
 
@@ -26,8 +22,8 @@ export default function AppRouter() {
       <Route path="/login" element={<Login/>} />
       <Route path="/signup" element={<SignUp/>} />
       <Route path="/users" element={<Users/>} />
-      {/* <Route path="/userdata" element={<UserData/>} /> */}
       <Route path="products/:id" element={<DynamicRouting/>} />
+      <Route path="/toast" element={<Toast/>}/>
     </Routes>
     </>
   );
