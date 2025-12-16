@@ -8,6 +8,7 @@ import { SignUp } from "../Features/Signup";
 import Users from "../User/Users";
 import DynamicRouting from "../dynamicRouting";
 import Toast from "../pages/Toast";
+import { Cart } from "../Pages/Cart";
 
 
 
@@ -24,6 +25,7 @@ export default function AppRouter() {
       <Route path="/users" element={<Users/>} />
       <Route path="products/:id" element={<DynamicRouting/>} />
       <Route path="/toast" element={<Toast/>}/>
+      <Route path="/cart" element={<Cart/>} />
     </Routes>
     </>
   );
