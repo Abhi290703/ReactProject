@@ -27,6 +27,7 @@ export default function Header() {
             <li><NavLink to="/blog" className={linkClass}>Blog</NavLink></li>
             <li><NavLink to="/userform" className={linkClass}>UserForm</NavLink></li>
             <li><NavLink to="/users" className={linkClass}>Users</NavLink></li>
+            <li><NavLink to="/cart" className={linkClass}>Cart</NavLink></li>
           </ul>
 
           {/* Popup Button */}
