@@ -1,13 +1,14 @@
-import { BrowserRouter } from 'react-router-dom'
-import { createRoot } from 'react-dom/client'
-import App from './App.jsx'
-import { Provider } from 'react-redux'
-import { Store } from './Redux/Store.jsx'
+import { createRoot } from "react-dom/client";
+import { Provider } from "react-redux";
+import { BrowserRouter } from "react-router-dom";
+import App from "./App.jsx";
+import { store } from "./Redux/Store.jsx";
+import { Cart } from "./Pages/Cart.jsx";
 
-createRoot(document.getElementById('root')).render(
-  <Provider store={Store}>
-     <BrowserRouter>
-    <App />
+createRoot(document.getElementById("root")).render(
+  <Provider store={store}>
+    <BrowserRouter>
+      <App />
     </BrowserRouter>
   </Provider>
-)
+);
