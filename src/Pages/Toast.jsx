@@ -36,6 +36,9 @@ export default function Toast({ open, onClose }) {
             placeholder="Description"
           />
         </div>
+        <div className="text-white bg-orange-800 flex">
+          <button className="cursor-pointer">Submit</button>
+        </div>
       </form>
     </div>
   );
