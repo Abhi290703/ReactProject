@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom';
 
 export default function Home() {
   return (
@@ -22,7 +23,9 @@ export default function Home() {
             Discover high-quality products, amazing deals, and insightful blogs.
           </p>
           <button className="mt-6 bg-yellow-400 text-indigo-900 px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition">
+            <NavLink to="ProductMain">
             Explore Products
+            </NavLink>
           </button>
         </section>
 
@@ -32,7 +35,7 @@ export default function Home() {
             Why Choose Us?
           </h2>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 hover:shadow-xl transition">
             <div className="bg-white shadow-md p-6 rounded-xl text-center">
               <h3 className="text-xl font-semibold mb-2">✅ Quality Products</h3>
               <p className="text-gray-600">
@@ -40,15 +43,15 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="bg-white shadow-md p-6 rounded-xl text-center">
+            <div className="bg-white shadow-md p-6 rounded-xl text-center hover:shadow-xl transition">
               <h3 className="text-xl font-semibold mb-2">🚀 Fast Delivery</h3>
               <p className="text-gray-600">
                 Quick and reliable delivery at your doorstep.
               </p>
             </div>
 
-            <div className="bg-white shadow-md p-6 rounded-xl text-center">
-              <h3 className="text-xl font-semibold mb-2">💬 24/7 Support</h3>
+            <div className="bg-white shadow-md p-6 rounded-xl text-center hover:shadow-xl transition">
+              <h3 className="text-xl font-semibold mb-2 ">💬 24/7 Support</h3>
               <p className="text-gray-600">
                 We are here to help you anytime.
               </p>
@@ -59,7 +62,7 @@ export default function Home() {
         {/* About Section */}
         <section className="bg-gray-100 py-16 px-6">
           <div className="max-w-5xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-4">About Us</h2>
+            <h2 className="text-3xl font-bold mb-4 hover:shadow transition">About Us</h2>
             <p className="text-gray-700 text-lg">
               MyStore is built to provide users with a smooth shopping
               experience and informative content, all in one place.
@@ -76,7 +79,9 @@ export default function Home() {
             Browse our latest products and deals now.
           </p>
           <button className="bg-yellow-400 text-indigo-900 px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300">
+            <NavLink to={"ProductMain"}>
             Get Started
+            </NavLink>
           </button>
         </section>
 
