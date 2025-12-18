@@ -1,8 +1,8 @@
 import AppRouter from '../RouterDom/AppRouter'
 import Header from '../pages/Header'
 import Footer from '../Pages/Footer'
-import { useLocation } from 'react-router-dom'
-import Time from '../Pages/Time';
+import { useLocation } from 'react-router-dom';
+// import Time from '../Pages/Time';
 
 
 
@@ -17,7 +17,7 @@ export default function Mainlayout() {
   return (
       <>
         {!userLocation && <Header/>}
-        <Time/>
+        {/* <Time/> */}
         <AppRouter/>
          {!userLocation && <Footer/>}
       </>    
