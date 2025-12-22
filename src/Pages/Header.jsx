@@ -39,6 +39,7 @@ export default function Header() {
                 )}
               </NavLink>
             </li>
+            <li><NavLink to="/FetchProduct">Fetch</NavLink></li>
           </ul>
         </div>
       </header>
