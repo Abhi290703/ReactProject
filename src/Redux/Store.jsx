@@ -1,10 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
 import cartReducer from "./cart/CartSlice";
-import productData from './ProductFetch/fetchSlice'
+import productReducer from "./ProductFetch/fetchSlice";
 
 export default configureStore({
-   reducer: {
+  reducer: {
     cart: cartReducer,
-    Productnames: productData
-  },
-})
+    ProductName: productReducer
+  }
+});
