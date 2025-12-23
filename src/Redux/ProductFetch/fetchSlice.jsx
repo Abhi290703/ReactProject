@@ -3,6 +3,7 @@ import axios from "axios";
 
 export const FetchSlice = createAsyncThunk(
   "Products/Fetch",
+  
   async () => {
     const { data } = await axios.get("https://dummyjson.com/products");
     return data.products;
