@@ -6,7 +6,7 @@ import { FetchSlice } from "./fetchSlice";
 export const FetchProduct = () => {
   
   const { products, loading, error } = useSelector(
-    (state) => state.Productnames
+    (state) => state.ProductName
   );
 
   const dispatch = useDispatch();
